@@ -1,0 +1,14 @@
+[Unit]
+Description=Room Weather Station Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/room-weather-station/weather_station.py
+WorkingDirectory=/home/pi/room-weather-station
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
