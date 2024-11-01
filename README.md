@@ -121,6 +121,3 @@ journalctl -u weather-station
    - Verify GPIO pin number in code matches your connection
    - Ensure proper power supply to Raspberry Pi
 
-## License
-
-MIT License
